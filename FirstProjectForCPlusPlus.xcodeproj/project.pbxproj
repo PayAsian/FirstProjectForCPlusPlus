@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19CA31501E368F9B004DDED0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CA314F1E368F9B004DDED0 /* main.cpp */; };
+		19CA316A1E3693C1004DDED0 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CA31691E3693C1004DDED0 /* Runner.cpp */; };
+		19CA316C1E369586004DDED0 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19CA316B1E369586004DDED0 /* Controller.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,8 @@
 
 /* Begin PBXFileReference section */
 		19CA314C1E368F9B004DDED0 /* FirstProjectForCPlusPlus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstProjectForCPlusPlus; sourceTree = BUILT_PRODUCTS_DIR; };
-		19CA314F1E368F9B004DDED0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		19CA31691E3693C1004DDED0 /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Runner.cpp; path = Controller/Runner.cpp; sourceTree = "<group>"; };
+		19CA316B1E369586004DDED0 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Controller.cpp; path = Controller/Controller.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 		19CA314E1E368F9B004DDED0 /* FirstProjectForCPlusPlus */ = {
 			isa = PBXGroup;
 			children = (
-				19CA314F1E368F9B004DDED0 /* main.cpp */,
+				19CA31691E3693C1004DDED0 /* Runner.cpp */,
+				19CA316B1E369586004DDED0 /* Controller.cpp */,
 			);
 			path = FirstProjectForCPlusPlus;
 			sourceTree = "<group>";
@@ -119,7 +122,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19CA31501E368F9B004DDED0 /* main.cpp in Sources */,
+				19CA316A1E3693C1004DDED0 /* Runner.cpp in Sources */,
+				19CA316C1E369586004DDED0 /* Controller.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
