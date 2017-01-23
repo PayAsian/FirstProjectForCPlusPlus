@@ -6,4 +6,12 @@
 //  Copyright © 2017 Trevino, Peyton. All rights reserved.
 //
 
-#include <stdio.h>
+#include <iostream>
+#include "Controller.h"
+
+using namespace std;
+
+void Controller :: start()
+{
+    cout << "words here please :D" << endl;
+}

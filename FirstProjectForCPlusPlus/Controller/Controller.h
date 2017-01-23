@@ -1,17 +1,17 @@
 //
-//  Runner.cpp
+//  Controller.h
 //  FirstProjectForCPlusPlus
 //
 //  Created by Trevino, Peyton on 1/23/17.
 //  Copyright © 2017 Trevino, Peyton. All rights reserved.
 //
 
-#include "Controller.h"
+#ifndef Controller_h
+#define Controller_h
 
-int main()
+class Controller
 {
-    Controller * app = new Controller();
-    app->start();
-    
-    return 0;
-}
+public:
+    void start();
+};
+#endif /* Controller_h */

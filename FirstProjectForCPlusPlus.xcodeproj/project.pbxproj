@@ -27,6 +27,7 @@
 		19CA314C1E368F9B004DDED0 /* FirstProjectForCPlusPlus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstProjectForCPlusPlus; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CA31691E3693C1004DDED0 /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Runner.cpp; path = Controller/Runner.cpp; sourceTree = "<group>"; };
 		19CA316B1E369586004DDED0 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Controller.cpp; path = Controller/Controller.cpp; sourceTree = "<group>"; };
+		19CA316D1E369879004DDED0 /* Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Controller.h; path = Controller/Controller.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 			children = (
 				19CA31691E3693C1004DDED0 /* Runner.cpp */,
 				19CA316B1E369586004DDED0 /* Controller.cpp */,
+				19CA316D1E369879004DDED0 /* Controller.h */,
 			);
 			path = FirstProjectForCPlusPlus;
 			sourceTree = "<group>";
