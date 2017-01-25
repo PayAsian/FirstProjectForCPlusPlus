@@ -27,4 +27,15 @@ void Controller :: specialOutput()
     string name;
     cin >> name;
     cout << "your name is " << name << " WOW COOL - :P" << endl;
+    cin.ignore();
+    cin >> name;
+    cout << name;
+    cout << "Type your name and age" << endl;
+    cin >> name >> age;
+    cout << "you typed " << name << " and " << age << endl;
+    cout << "Type in your full name" << endl;
+    cin.ignore();
+    getline(cin, name);
+    cout << name << endl;
+    
 }
