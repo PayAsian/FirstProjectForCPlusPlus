@@ -11,6 +11,8 @@
 
 class Controller
 {
+private:
+    void specialOutput();
 public:
     void start();
 };
