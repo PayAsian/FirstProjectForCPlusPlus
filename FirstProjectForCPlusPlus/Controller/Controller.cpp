@@ -26,9 +26,9 @@ void Controller :: start()
     useNumbers(myNumber);
     cout << myNumber << endl;
     
-    cout << "Changing a value" << endl;
+    cout << "Starting with: " << myNumber << endl;
     myNumber = impactNumber();
-    cout << "See - impacted " << endl;
+    cout << "See - impacted " << myNumber << endl;
     
     cout << "changing with a pointer" << endl;
     usePointerToChange(numberPointer);
