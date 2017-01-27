@@ -7,14 +7,33 @@
 //
 
 #include <iostream>
+#include <random>
 #include "Controller.h"
 
 using namespace std;
 
 void Controller :: start()
 {
-    cout << "words here please :D" << endl;
-    this->specialOutput();
+    //cout << "Words here please :D" << endl;
+    //this->specialOutput();
+    //this->diceOutput();
+    
+    
+    int myNumber = 9;
+    int * numberPointer = &myNumber;
+    
+    cout << myNumber << endl;
+    useNumbers(myNumber);
+    cout << myNumber << endl;
+    
+    cout << "Changing a value" << endl;
+    myNumber = impactNumber();
+    cout << "See - impacted " << endl;
+    
+    cout << "changing with a pointer" << endl;
+    usePointerToChange(numberPointer);
+    cout << "See how the nubmer has been changed: " << myNumber << endl;
+    
 }
 
 void Controller :: specialOutput()
@@ -28,8 +47,6 @@ void Controller :: specialOutput()
     cin >> name;
     cout << "your name is " << name << " WOW COOL - :P" << endl;
     cin.ignore();
-    cin >> name;
-    cout << name;
     cout << "Type your name and age" << endl;
     cin >> name >> age;
     cout << "you typed " << name << " and " << age << endl;
@@ -37,5 +54,37 @@ void Controller :: specialOutput()
     cin.ignore();
     getline(cin, name);
     cout << name << endl;
+}
+
+void Controller :: diceOutput()
+{
+    std :: default_random_engine generator;
+    std :: uniform_int_distribution<int> distribution(1,6);
+    int diceRoll = distribution(generator);
+    cout << diceRoll << endl;
     
+    
+    auto dice = std :: bind (distribution , generator);
+    int wisdom = dice() + dice() + dice();
+    cout << wisdom << endl;
+    
+    cout << wisdom + diceRoll << endl;
+}
+
+void Controller :: useNumbers(int suppliedNumber)
+{
+    cout << "I was given: " << suppliedNumber << endl;
+    suppliedNumber = (suppliedNumber * 3 + 3242) / 42;
+    cout << "It is now: " << suppliedNumber << endl;
+    
+}
+
+int Controller :: impactNumber()
+{
+    return 165789;
+}
+
+void Controller :: usePointerToChange(int * pointedTo)
+{
+    *pointedTo = 2 * (1230985);
 }

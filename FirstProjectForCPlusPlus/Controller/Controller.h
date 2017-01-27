@@ -13,6 +13,11 @@ class Controller
 {
 private:
     void specialOutput();
+    void diceOutput();
+    void useNumbers(int someNumber);
+    int impactNumber();
+    void usePointerToChange(int * somePointer);
+    
 public:
     void start();
 };
