@@ -9,14 +9,23 @@
 #include <iostream>
 #include <random>
 #include "Controller.h"
+#include "../Model/Timer.hpp"
 
 using namespace std;
 
+void Controller :: usePointerToChange(int * pointedTo)
+{
+    *pointedTo = 2 * (123456);
+}
+
 void Controller :: start()
 {
-    //cout << "Words here please :D" << endl;
-    //this->specialOutput();
-    //this->diceOutput();
+    Timer afternoonTime;
+    afternoonTime.startTimer();
+    
+    cout << "Words here please :D" << endl;
+    this->specialOutput();
+    this->diceOutput();
     
     
     int myNumber = 9;
@@ -30,9 +39,17 @@ void Controller :: start()
     myNumber = impactNumber();
     cout << "See - impacted " << myNumber << endl;
     
+    int derpy;
+    cin >> derpy;
+    
+    cout << derpy << endl;
+    
     cout << "changing with a pointer" << endl;
     usePointerToChange(numberPointer);
     cout << "See how the nubmer has been changed: " << myNumber << endl;
+    
+    afternoonTime.stopTimer();
+    afternoonTime.displayTimerInformation();
     
 }
 
@@ -82,9 +99,4 @@ void Controller :: useNumbers(int suppliedNumber)
 int Controller :: impactNumber()
 {
     return 165789;
-}
-
-void Controller :: usePointerToChange(int * pointedTo)
-{
-    *pointedTo = 2 * (1230985);
 }
