@@ -22,7 +22,7 @@ public:
     void stopTimer();
     void resetTimer();
     void displayTimerInformation();
-    long getExecutionTimeInMicroseconds;
+    long getExecutionTimeInMicroseconds();
     
 };
 
