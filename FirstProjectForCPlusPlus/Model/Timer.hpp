@@ -11,6 +11,19 @@
 
 #include <time.h>
 
+class Timer
+{
+private:
+    clock_t executionTime;
 
+public:
+    Timer();
+    void startTimer();
+    void stopTimer();
+    void resetTimer();
+    void displayTimerInformation();
+    long getExecutionTimeInMicroseconds;
+    
+};
 
 #endif /* Timer_hpp */
